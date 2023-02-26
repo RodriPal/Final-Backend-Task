@@ -7,6 +7,6 @@ module.exports = [
         .custom((value) => value.includes('@') && value.includes('.com')).withMessage('El email ingresado no es válido'),
         
     check('password')
-    .exists().withMessage('El password es un campo requerido')
-    .notEmpty().withMessage('El password requiere contenido')
+        .exists().withMessage('El password es un campo requerido')
+        .notEmpty().withMessage('El password requiere contenido')
 ];
